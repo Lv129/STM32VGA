@@ -101,33 +101,38 @@ int main(void)
 
 
 };
+	
 		delay_init(72);
-    
-    rcc_config();
-    vga_init();
-    vga_clear_screen();
+                rcc_config();
+                vga_init();
+                vga_clear_screen();
 		vga_bitblt(NULL, 0, 0, 144, 72,cn, GDI_ROP_COPY);
-  	vga_draw_text(150, 90, "HELL0 WORLD!!", GDI_ROP_COPY);
+  	        vga_draw_text(150, 90, "HELL0 WORLD!!", GDI_ROP_COPY);
 		vga_draw_point(NULL,399,199, GDI_ROP_COPY);
 		vga_draw_text(150, 110, "STM32F103C8T6", GDI_ROP_COPY);
 		vga_draw_rec(200, 150, 250,199, GDI_ROP_COPY);
-	 while(1)
-			{
+		 while(1)
+		{
     
       
-			}
+		}
 			
 }
 /*
-STM32F103C8T6 £¨F1Í¨ÓÃ£©
-½Ó¿Ú
+STM32F103C8T6 ï¼ˆF1é€šç”¨ï¼‰
+æ¥å£
 
  *****  5
 *****   10
- *****  25
+ *****  15
 
-PA1----------------VGA24
-PA8----------------VGA23
-PA7----------------VGA123 Èı¸ù½ÓÔÚÒ»ÆğÎª°×É«
+PA1----------------VGA14
+PA8----------------VGA13
+PA7----------------VGA123 ä¸‰æ ¹æ¥åœ¨ä¸€èµ·ä¸ºç™½è‰²
+GND----------------VGA10
+
+å–ç æ–¹å¼
+é˜´ç ,é«˜ä½åœ¨å‰,é€è¡Œå¼
 */
+
 
